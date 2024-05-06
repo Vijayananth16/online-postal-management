@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Packages</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script>
+        function trackPackage() {
+
+            var trackingNumber = document.getElementById("trackingNumber").value;
+            
+  
+            if (trackingNumber === "") {
+                alert("Please enter a valid tracking number.");
+                return false;
+            }
+            
+   
+            window.location.href = "track-details.html?trackingNumber=" + encodeURIComponent(trackingNumber);
+            
+          
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Track Packages</h2>
+        <form onsubmit="return trackPackage();"> 
+            <div>
+                <label for="trackingNumber">Enter Tracking Number:</label>
+                <input type="text" id="trackingNumber" name="trackingNumber" required>
+            </div>
+            <button type="submit">Track</button>
+        </form>
+    </div>
+</body>
+</html>
