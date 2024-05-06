@@ -1,0 +1,72 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery History</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4">Delivery History</h2>
+        <table class="table table-bordered" id="deliveryTable">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Tracking Number</th>
+                    <th>Status</th>
+                    <th>Delivery Date</th>
+                    <th>Action</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1234567890</td>
+                    <td>Delivered</td>
+                    <td>April 25, 2024</td>
+                    <td><button class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>9876543210</td>
+                    <td>In Transit</td>
+                    <td>April 28, 2024</td>
+                    <td><button class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>2468013579</td>
+                    <td>Out for Delivery</td>
+                    <td>May 1, 2024</td>
+                    <td><button class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1357924680</td>
+                    <td>Delivered</td>
+                    <td>May 3, 2024</td>
+                    <td><button class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function deleteRow(button) {
+            
+            const row = button.closest('tr');
+            if (row) {
+                row.remove(); 
+            }
+        }
+    </script>
+</body>
+</html>
