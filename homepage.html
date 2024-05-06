@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Postal Management Dashboard</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 16px 24px; /* Increased padding for better clickability */
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            font-size: 20px; /* Increased font size */
+        }
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 900px; /* Increased max-width for a wider content area */
+            margin: 50px auto; /* Added more margin for better spacing */
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 36px; /* Increased font size */
+        }
+        p, ul {
+            font-size: 24px; /* Increased font size for paragraphs and list items */
+            line-height: 1.8; /* Increased line height for better readability */
+            margin-bottom: 20px; /* Added margin bottom for better spacing */
+        }
+        strong {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="deliveryhistory.html"><i class="fas fa-mail-bulk"></i> View Delivery History</a></li>
+            <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to Your Postal Management Dashboard</h1>
+        <p>Explore the features and services available:</p>
+        <ul>
+            <li><a href="track.html">Track Packages</a></li>
+            <li><a href="sendpackage.html">Send New Package</a></li>
+        </ul>
+        <p>Need help? Contact customer support at <strong>indianpost@gmail.com</strong>.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
